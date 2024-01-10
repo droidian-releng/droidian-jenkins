@@ -6,8 +6,8 @@ ln -s /usr/bin/python2 /usr/bin/python
 
 curl https://storage.googleapis.com/git-repo-downloads/repo > /usr/bin/repo && chmod a+x /usr/bin/repo
 
-mkdir -p /opt/halium/9.0/ && cd /opt/halium/9.0/ && repo init -u https://github.com/Halium/android -b halium-9.0 --depth=1 && repo sync -c --force-sync --force-remove-dirty
-mkdir -p /opt/halium/10.0/ && cd /opt/halium/10.0/ && repo init -u https://github.com/Halium/android -b halium-10.0 --depth=1 && repo sync -c --force-sync --force-remove-dirty
-mkdir -p /opt/halium/11.0/ && cd /opt/halium/11.0/ && repo init -u https://github.com/Halium/android -b halium-11.0 --depth=1 && repo sync -c --force-sync --force-remove-dirty
-mkdir -p /opt/halium/12.0/ && cd /opt/halium/12.0/ && repo init -u https://github.com/Halium/android -b halium-12.0 --depth=1 && repo sync -c --force-sync --force-remove-dirty
-mkdir -p /opt/halium/13.0/ && cd /opt/halium/13.0/ && repo init -u https://github.com/Halium/android -b halium-13.0 --depth=1 && repo sync -c --force-sync --force-remove-dirty
+mkdir -p /opt/halium/9.0/ && cd /opt/halium/9.0/ && repo init -u https://github.com/droidian-bionic/android -b halium-9.0 --depth=1 && repo sync -c --force-sync --force-remove-dirty
+mkdir -p /opt/halium/10.0/ && cd /opt/halium/10.0/ && repo init -u https://github.com/droidian-bionic/android -b halium-10.0 --depth=1 && repo sync -c --force-sync --force-remove-dirty
+mkdir -p /opt/halium/11.0/ && cd /opt/halium/11.0/ && repo init -u https://github.com/droidian-bionic/android -b halium-11.0 --depth=1 && repo sync -c --force-sync --force-remove-dirty
+mkdir -p /opt/halium/12.0/ && cd /opt/halium/12.0/ && repo init -u https://github.com/droidian-bionic/android -b halium-12.0 --depth=1 && repo sync -c --force-sync --force-remove-dirty
+mkdir -p /opt/halium/13.0/ && cd /opt/halium/13.0/ && repo init -u https://github.com/droidian-bionic/android -b halium-13.0 --depth=1 && repo sync -c --force-sync --force-remove-dirty
