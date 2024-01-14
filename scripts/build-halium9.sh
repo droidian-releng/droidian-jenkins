@@ -8,7 +8,9 @@ repo sync -c --force-sync --force-remove-dirty
 
 # build
 
-rm -rf ./out/
+rm -rf out/target/product/halium_arm64/root/
+rm -rf out/target/product/halium_arm64/system/
+rm -rf out/target/product/halium_arm64/obj/PACKAGING/systemimage_intermediates/
 
 ./hybris-patches/apply-patches.sh --mb
 
@@ -22,4 +24,6 @@ time make -j10 systemimage
 
 mv out/target/product/halium_arm64/system.img ${WORKSPACE}/system-${BUILD_NUMBER}.img
 
-rm -rf ./out/
+rm -rf out/target/product/halium_arm64/root/
+rm -rf out/target/product/halium_arm64/system/
+rm -rf out/target/product/halium_arm64/obj/PACKAGING/systemimage_intermediates/
